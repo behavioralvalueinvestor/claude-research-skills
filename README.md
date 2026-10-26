@@ -10,14 +10,6 @@ Paste this sentence into Claude Code, either in the terminal or in the Code tab 
 
 Then quit and restart Claude Code or the desktop app, whichever you used. To update later, paste the same sentence again.
 
-## Before your first run: put your email in
-
-The SEC asks every program that downloads from EDGAR to identify itself with a contact email. Open `~/.claude/skills/10k-to-markdown/tenk_to_md.py`, find this line near the top:
-
-    UA = "10k-to-markdown youremail@gmail.com"
-
-and replace `youremail@gmail.com` with your own email address. Or ask Claude Code to do it for you. Reinstalling or updating the skill puts the placeholder back, so do this again after each update.
-
 ## What's inside
 
 - **/10k-to-markdown**: downloads one 10-K from SEC EDGAR for a ticker and fiscal year, and saves it as a Markdown file on your computer, plus a small index of where each section starts and ends. Claude then reads only the sections it needs instead of the whole filing. Needs Python 3, with nothing else to install.
