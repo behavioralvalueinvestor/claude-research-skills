@@ -6,9 +6,10 @@ description: Downloads one original Form 10-K from SEC EDGAR for a ticker and fi
 
 # 10k-to-markdown
 
-Run (Bash; one call, prints at most 6 lines):
+Run (Bash; one call, prints at most 6 lines). Use `python3` on macOS and
+Linux, `python` on Windows:
 
-    python -I ~/.claude/skills/10k-to-markdown/tenk_to_md.py TICKER FISCAL_YEAR [--out-root DIR] [--force]
+    python3 -I ~/.claude/skills/10k-to-markdown/tenk_to_md.py TICKER FISCAL_YEAR [--out-root DIR] [--force]
 
 - `TICKER` as given (`BRK.B` and `brk-b` both work). `FISCAL_YEAR` is the
   company's fiscal year: `dei:DocumentFiscalYearFocus` from the filing's
